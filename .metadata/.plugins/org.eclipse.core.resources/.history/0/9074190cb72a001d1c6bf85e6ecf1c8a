@@ -1,0 +1,8 @@
+package entities;
+
+public class Votos {
+	public int totalEleitores;
+	public int votosValidos;
+	public int votosNulos;
+	public int votosBranco;
+}

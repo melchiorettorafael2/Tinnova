@@ -1,0 +1,25 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int fat = 1;
+		int num = sc.nextInt();
+
+		while (c > 1) {
+			fat *= c;
+			c--;
+		}
+
+		System.out.println(c+"!= "+fat);
+
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int fat = 1;
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro"));
+		int var = num;
+
+		while (num > 1) {
+			fat *= num;
+			num--;
+		}
+		
+		JOptionPane.showMessageDialog(null, var+"! = "+fat);
+
+		System.out.println(var+"!= "+fat);
+
+		sc.close();
+
+	}
+
+}

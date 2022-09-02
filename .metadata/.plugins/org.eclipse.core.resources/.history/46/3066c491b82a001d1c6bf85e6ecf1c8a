@@ -1,0 +1,19 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+import entities.Votos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	
+		Votos votos = new Votos();
+		
+		votos.totalEleitores = sc.nextInt();
+		JOptionPane.showInputDialog("Informe a quantidade de eleitores", votos);
+	}
+
+}

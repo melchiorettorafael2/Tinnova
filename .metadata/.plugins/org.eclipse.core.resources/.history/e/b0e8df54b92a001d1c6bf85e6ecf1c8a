@@ -1,0 +1,41 @@
+package entities;
+
+public class Votos {
+	public int totalEleitores;
+	public int votos;
+	public int votosNulos;
+	public int votosBranco;
+
+	public Votos() {
+
+	}
+
+	public Votos(int totalEleitores, int votosValidos, int votosNulos, int votosBranco) {
+		this.totalEleitores = totalEleitores;
+		this.votosValidos = votosValidos;
+		this.votosNulos = votosNulos;
+		this.votosBranco = votosBranco;
+	}
+
+	public int getTotalEleitores() {
+		return totalEleitores;
+	}
+
+	public int getVotosValidos() {
+		return votosValidos;
+	}
+
+	public int getVotosNulos() {
+		return votosNulos;
+	}
+
+	public int getVotosBranco() {
+		return votosBranco;
+	}
+
+	public int calcVotosValidos() {
+		
+		return 0;
+	}
+
+}

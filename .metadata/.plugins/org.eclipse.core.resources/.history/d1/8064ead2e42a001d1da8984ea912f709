@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int aux = 1;
+		int total;
+		int soma3 = 0;
+		int soma5 = 0;
+
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
+
+		for (int i = 1; i < num; i++) {
+			if (i % 3 == 0 && i%5==0) {
+				soma5+=i;
+			}
+
+		}
+
+
+
+		total = soma3 + soma5;
+
+		System.out.println("Soma dos Multiplos de 3 e 5: "+soma5);
+	}
+
+}

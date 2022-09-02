@@ -1,0 +1,38 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+import entities.Votos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Votos votos = new Votos();
+
+		votos.totalEleitores = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de eleitores"));
+		
+		if(votos.totalEleitores>votos.votosValidos) {
+
+		votos.votosValidos = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de votos válidos"));
+		votos.percentValidos();
+
+		votos.votosBranco = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de votos brancos"));
+		votos.percentBrancos();
+
+		votos.votosNulos = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de votos nulos"));
+		votos.percentNulos();
+
+		JOptionPane.showMessageDialog(null, votos);
+		
+		}else {
+			JOptionPane.showMessageDialog(null, "Quantidade de Votos não pode ser maior que a quantidade de eleitores",0);
+		}
+
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+import entities.Votos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	
+		Votos votos = new Votos();
+		
+		JOptionPane.showInputDialog("Informe a quantidade de eleitores");
+		votos.totalEleitores = sc.nextInt();
+		JOptionPane.showInputDialog("Informe o percentual de votos válidos");
+		votos.votosValidos = sc.nextInt();
+		JOptionPane.showInputDialog("Informe o percentual de votos brancos");
+		votos.votosBranco = sc.nextInt();
+		JOptionPane.showInputDialog("Informe a quantidade de votos nulos");
+		votos.votosNulos = sc.nextInt();
+
+
+
+		
+
+	}
+
+}
